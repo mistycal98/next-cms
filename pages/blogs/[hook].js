@@ -7,26 +7,26 @@ import Link from "next/link";
 import BlogDetail from "../../components/BlogDetail";
 
 const EachBlog = (props) => {
-	return (
-		<Layout>
-			<BlogDetail blog={props.blog} />
-		</Layout>
-	);
+  return (
+    <Layout>
+      <BlogDetail blog={props.blog} />
+    </Layout>
+  );
 };
 
 export const getServerSideProps = async (context) => {
-	const Query = Stack.ContentType("blog_cms_tushar").Query();
-	// console.log(context.params.hook);
-	let result = await Query.where("uid", `${context.params.hook}`)
-		.includeReference(["reference"])
-		.toJSON()
-		.find();
-	// console.log(result[0]);
-	return {
-		props: {
-			blog: result[0],
-		},
-	};
+  const Query = Stack.ContentType("blog_cms_tushar").Query();
+  // console.log(context.params.hook);
+  let result = await Query.where("uid", `${context.params.hook}`)
+    .includeReference(["reference"])
+    .toJSON()
+    .find();
+  // console.log(result[0]);
+  return {
+    props: {
+      blog: result[0],
+    },
+  };
 };
 
 export default EachBlog;
