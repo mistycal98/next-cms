@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Blogs from "../components/Blogs";
 
 const blogs = (props) => {
-	return <Layout>{props.blogs.length === 0 ? <h1>Loading</h1> : <Blogs blogs={props.blogs} />}</Layout>;
+	return <Layout>{props.blogs.length === "undefined" ? <h1>Loading</h1> : <Blogs blogs={props.blogs} />}</Layout>;
 };
 
 export const getServerSideProps = async () => {

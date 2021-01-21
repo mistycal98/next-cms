@@ -7,7 +7,7 @@ const Layout = (props) => {
     return (
         <div className="d-flex flex-column vh-100">
             <Navigation className="flex-grow-1" />
-            <Container className="flex-2 vh-100">{props.children}</Container>
+            <Container className="flex-grow-3">{props.children}</Container>
             <Footer className="flex-grow-1" />
         </div>
     )

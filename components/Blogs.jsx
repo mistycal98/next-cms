@@ -1,25 +1,26 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Container, Card, Button } from "react-bootstrap";
+import Link from "next/link";
 
 const Blogs = (props) => {
-  console.log("blogs.jsx", props.blogs);
-  return (
-    <div>
-      {props.blogs.map((blog) => {
-        <Card style={{ width: "18rem" }} key={index}>
-          <Card.Img variant="top" src={blog.image_url.url} />
-          <Card.Body>
-            <Card.Title>{blog.blog_title}</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </Card.Text>
-            <Button variant="primary">Read More</Button>
-          </Card.Body>
-        </Card>;
-      })}
-    </div>
-  );
+    console.log("blogs.jsx", props.blogs);
+    return (
+        <Container className="d-flex flex-row">
+            {props.blogs.map((blog, index) => {
+                return (
+                    <Card className="m-3 h-auto " style={{ width: "18rem" }} key={index}>
+                        <Card.Img variant="top" src={blog.image_url.url} />
+                        <Card.Body>
+                            <Card.Title>{blog.blog_title}</Card.Title>
+                            <Link href={`blogs/${blog.uid}`}>
+                                <a><Button variant="primary">Read More</Button></a>
+                            </Link>
+                        </Card.Body>
+                    </Card>
+                );
+            })}
+        </Container>
+    );
 };
 
 export default Blogs;
