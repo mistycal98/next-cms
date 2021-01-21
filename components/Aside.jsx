@@ -6,7 +6,7 @@ const Aside = (props) => {
     return (
         <Container className="w-50">
             {props.reference.map((ref, index) => {
-                console.log(ref);
+                // console.log(ref);
                 return (
                     <Link href={`${ref.uid}`} key={index}>
                         <a className="text-dark text-decoration-none">

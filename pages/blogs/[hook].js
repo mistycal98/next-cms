@@ -16,7 +16,7 @@ const EachBlog = (props) => {
 
 export const getServerSideProps = async (context) => {
 	const Query = Stack.ContentType("blog_cms_tushar").Query();
-	console.log(context.params.hook);
+	// console.log(context.params.hook);
 	let result = await Query.where("uid", `${context.params.hook}`)
 		.includeReference(["reference"])
 		.toJSON()

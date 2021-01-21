@@ -8,7 +8,7 @@ const Navigation = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Link href="/">
-                <a className="text-decoration-none">
+                <a>
                     <Navbar.Brand>
                         <Image
                             alt="Official logo"
@@ -25,14 +25,14 @@ const Navigation = () => {
                 {/* Blogs NavBar */}
                 <Nav.Item className="mx-3">
                     <Link href="/blogs">
-                        <a className="text-white">Blogs</a>
+                        <a className="text-decoration-none text-white">Blogs</a>
                     </Link>
                 </Nav.Item>
 
                 {/* AboutUs NavBar */}
                 <Nav.Item className="mx-3">
                     <Link href="/about">
-                        <a className="text-white">About US</a>
+                        <a className="text-decoration-none text-white">About US</a>
                     </Link>
                 </Nav.Item>
             </Navbar.Collapse>

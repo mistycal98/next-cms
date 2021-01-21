@@ -14,17 +14,17 @@ function Footer() {
             <Row className={[style.icon]}>
                 <Col className="p-3">
                     <a href="">
-                        <FontAwesomeIcon className="text-white" icon={["fab", "github"]} size="3x" />
+                        <FontAwesomeIcon className="text-white" icon={["fab", "github"]} />
                     </a>
                 </Col>
                 <Col className="p-3 text-white">
                     <a href="">
-                        <FontAwesomeIcon className="text-white" icon={["fab", "whatsapp"]} size="3x" />
+                        <FontAwesomeIcon className="text-white" icon={["fab", "whatsapp"]} />
                     </a>
                 </Col>
                 <Col className="p-3 text-white">
                     <a href="">
-                        <FontAwesomeIcon className="text-white" icon={["far", "envelope"]} size="3x"  />
+                        <FontAwesomeIcon className="text-white" icon={["far", "envelope"]}  />
                     </a>
                 </Col>
             </Row>
