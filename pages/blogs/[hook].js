@@ -18,10 +18,10 @@ export const getServerSideProps = async (context) => {
 	const Query = Stack.ContentType("blog_cms_tushar").Query();
 	console.log(context.params.hook);
 	let result = await Query.where("uid", `${context.params.hook}`)
-		// .includeReference(["reference_field_uid"])
+		.includeReference(["reference"])
 		.toJSON()
 		.find();
-	console.log(result[0]);
+	// console.log(result[0]);
 	return {
 		props: {
 			blog: result[0],

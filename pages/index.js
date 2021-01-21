@@ -6,8 +6,8 @@ const Home = (props) => {
 	return (
 		<Layout>
 			<Head>
-				<title>ContentStack Blogs</title>
-				<link rel="icon" href="/favicon.ico" />
+				<title>Home | ContentStack Blogs</title>
+				<link rel="icon" href="/medium.png" />
 			</Head>
 			<Card className="w-50 h-auto  my-4 mx-auto shadow-lg p-3 mb-5 bg-white rounded">
 				<h3 className="text-center m-3">Instruction</h3>

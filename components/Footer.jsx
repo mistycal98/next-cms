@@ -12,19 +12,19 @@ function Footer() {
                 <h4>CopyRight @ Tushar Mistry</h4>
             </div>
             <Row className={[style.icon]}>
-                <Col>
+                <Col className="p-3">
                     <a href="">
-                        <FontAwesomeIcon icon={["fab", "github"]} />
+                        <FontAwesomeIcon className="text-white" icon={["fab", "github"]} size="3x" />
                     </a>
                 </Col>
-                <Col>
+                <Col className="p-3 text-white">
                     <a href="">
-                        <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+                        <FontAwesomeIcon className="text-white" icon={["fab", "whatsapp"]} size="3x" />
                     </a>
                 </Col>
-                <Col>
+                <Col className="p-3 text-white">
                     <a href="">
-                        <FontAwesomeIcon icon={["far", "envelope"]} />
+                        <FontAwesomeIcon className="text-white" icon={["far", "envelope"]} size="3x"  />
                     </a>
                 </Col>
             </Row>
