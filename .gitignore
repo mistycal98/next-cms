@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#lock-files 
+yarn.lock
+package-lock.json
+
+# test page
+/pages/test.js
